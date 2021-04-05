@@ -1,4 +1,7 @@
 ^bizwiz\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+<<<<<<< HEAD
 ^README\.Rmd$
+=======
+>>>>>>> 736179bc382f944920087150e537afef3fb61fdc
