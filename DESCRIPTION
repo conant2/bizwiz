@@ -17,23 +17,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     stats
-=======
-Package: bizwiz
-Title: Quick Buisness Data Generation
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Colin",
-           family = "Conant",
-           role = c("aut", "cre"),
-           email = "colin.conant@mail.utoronto.ca",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: This package was designed with the intention of making it easy to generate fake business data to work with in R. 
-             The functions in this package allow the user to quickly make dataframes with randomly generated names, salaries, and company revenue and expenses. 
-             I hope that you enjoy using the bizwiz package and that it streamlines your work. 
-License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
-Imports: 
-    stats
+

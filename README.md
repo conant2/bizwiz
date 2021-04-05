@@ -14,14 +14,7 @@ you enjoy using the bizwiz package and that it streamlines your work.
 
 ## Installation
 
-You can install the released version of bizwiz from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("bizwiz")
-```
-
-And the development version from
+You can install the development version from
 [GitHub](https://github.com/conant2/bizwiz) with:
 
 ``` r
@@ -31,53 +24,60 @@ devtools::install_github("conant2/bizwiz")
 
 ## Examples
 
+bizstaff gives a dataframe of employees with variables: employeeID
+(unique employee IDs), GivenName (first, or given name), Surname (last
+name), income (the income of the employee), yearsemployed (number of
+years the employee has worked), Position (the job title of the
+employee).
+
 ``` r
 library(bizwiz)
 # A staff data frame example
 bizstaff(10)
-#>    employeeID GivenName  Surname    income yearsemployed
-#> 1           1  Veronica     Long  92111.03            11
-#> 2           2     Lukas   Hickey  93143.72             8
-#> 3           3     Laura Nakamura  52992.00             1
-#> 4           4   Gabriel   Hughes  69369.61            13
-#> 5           5       Mia   Joseph  86831.06            18
-#> 6           6   Gabriel   Glover 104329.79            19
-#> 7           7  Jonathan     Diaz  74403.99             7
-#> 8           8   Bradley    Imamu  84242.00            14
-#> 9           9       Lin     Park 114224.70            24
-#> 10         10   Claudia      Lee  44623.89             1
+#>    employeeID GivenName      Surname    income yearsemployed
+#> 1           1   Stephen      Mertens 125061.50            22
+#> 2           2    Dinesh      Morales  95397.23            15
+#> 3           3       Ana        Cohen  79047.37             6
+#> 4           4    Jamila      Mbafeno  99411.84            15
+#> 5           5      Kian    Rodriguez  81693.37             3
+#> 6           6     Jorge        Rolle  63409.71             9
+#> 7           7      Andy Papadopoulos 100126.19            18
+#> 8           8      Ruth      Ibrahim  73106.69            16
+#> 9           9    Dinesh         Bibi 134037.33            24
+#> 10         10 Alejandro          Eke 115641.83            22
 #>                           Position
-#> 1           Senior Project Manager
-#> 2               Managing Executive
-#> 3                 Junior Associate
-#> 4                 Junior Devleoper
-#> 5                 Junior Devleoper
-#> 6  Customer Service Representative
-#> 7                   Junior Analyst
-#> 8                 Senior Developer
-#> 9                 Senior Executive
-#> 10 Customer Service Representative
+#> 1            Junior Market Analyst
+#> 2                 Office Assistant
+#> 3                Financial Officer
+#> 4                    Administrator
+#> 5                       File Clerk
+#> 6             Data Entry Assistant
+#> 7       Public Relations Executive
+#> 8                Financial Officer
+#> 9  Customer Service Representative
+#> 10      Public Relations Executive
 ```
+
+bizcompany gives a dataframe of company branches with variables:
+branchID (unique branch IDs), revenue (the revenue for the branch),
+expenses (the expenses for the branch), profit (the difference between
+revenue and expenses), units\_sold (the number of items sold for the
+branch).
 
 ``` r
 library(bizwiz)
 # A company data frame example
 bizcompany(10)
 #>    branchID  revenue expenses   profit units_sold
-#> 1         1  9041324  8106566   934758     613187
-#> 2         2  9883463  7669802  2213661     365694
-#> 3         3 10095249  8160365  1934884     509650
-#> 4         4 11068015 12226271 -1158256     436008
-#> 5         5  7550945  8716936 -1165991     320159
-#> 6         6 11265746 10222542  1043204     672297
-#> 7         7 11591212  8671029  2920183     512358
-#> 8         8  7588464  8699516 -1111052     326025
-#> 9         9 10112070  8388604  1723466     440058
-#> 10       10  8547369  7897947   649422     462605
-```
+#> 1         1 12016487 10150071  1866416     518309
+#> 2         2  6683725  9488443 -2804718     658367
+#> 3         3  7951856  8240687  -288831     733991
+#> 4         4  5046844  7204118 -2157274     757225
+#> 5         5 12514155 10566240  1947915     469101
+#> 6         6 11616587  6960852  4655735     497041
+#> 7         7 12280435 10644793  1635642     549933
+#> 8         8 11122438  9784774  1337664     442425
+#> 9         9  8058471  8120558   -62087     506672
+#> 10       10  6116517 10988504 -4871987     410450
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+```

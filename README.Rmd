@@ -19,18 +19,12 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 This package was designed with the intention of making it easy to generate fake business data to work with in R. 
-             The functions in this package allow the user to quickly make dataframes with randomly generated names, salaries, company revenue, and expenses. 
-             I hope that you enjoy using the bizwiz package and that it streamlines your work.
+The functions in this package allow the user to quickly make dataframes with randomly generated names, salaries, company revenue, and expenses. 
+I hope that you enjoy using the bizwiz package and that it streamlines your work.
 
 ## Installation
 
-You can install the released version of bizwiz from [CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("bizwiz")
-```
-
-And the development version from [GitHub](https://github.com/conant2/bizwiz) with:
+You can install the development version from [GitHub](https://github.com/conant2/bizwiz) with:
 
 ``` r
 # install.packages("devtools")
@@ -38,18 +32,18 @@ devtools::install_github("conant2/bizwiz")
 ```
 ## Examples
 
-
+bizstaff gives a dataframe of employees with variables: employeeID (unique employee IDs), GivenName (first, or given name), Surname (last name), 
+income (the income of the employee), yearsemployed (number of years the employee has worked), Position (the job title of the employee). 
 ```{r example}
 library(bizwiz)
 # A staff data frame example
 bizstaff(10)
 ```
 
+bizcompany gives a dataframe of company branches with variables: branchID (unique branch IDs), revenue (the revenue for the branch), expenses (the expenses for the branch), profit (the difference between revenue and expenses), units_sold (the number of items sold for the branch). 
 ```{r}
 library(bizwiz)
 # A company data frame example
 bizcompany(10)
 ```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/master/examples>.
 

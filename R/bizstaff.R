@@ -18,7 +18,7 @@ bizstaff <- function(n){
   position <-
     c("Senior Analyst", "Senior Developer", "Senior Project Manager", "Public Relations Executive", "Brand Strategist", "Branch Manager",
       "Senior Executive", "Data Officer", "Financial Officer", " Managing Executive", "Cloud Architect", "Senior Market Analyst",
-      "Junior Analyst", "Junior Devleoper", "Administrator", "Office Assistant", "Data Entry Assistant", "Junior Market Analyst", "File Clerk",
+      "Junior Analyst", "Junior Developer", "Administrator", "Office Assistant", "Data Entry Assistant", "Junior Market Analyst", "File Clerk",
       "Junior Associate", "Customer Service Representative")
 
   first_names <- c("Mary", "Melissa", "Jennifer", "Elizabeth", "Barabra", "Susan", "Margaret", "Michelle", "Emily", "Rebecca",
