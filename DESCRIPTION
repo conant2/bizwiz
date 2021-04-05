@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Package: bizwiz
 Title: Quick Buisness Data Generation
 Version: 0.0.0.9000
@@ -38,4 +37,3 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     stats
->>>>>>> 736179bc382f944920087150e537afef3fb61fdc
