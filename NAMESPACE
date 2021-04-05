@@ -2,4 +2,3 @@
 
 export(bizcompany)
 export(bizstaff)
-export(testmean)
